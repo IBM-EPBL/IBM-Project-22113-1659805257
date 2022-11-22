@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap");
+:root {
+  --primary-color: ##d9480f;
+  --secondary-color: #af355f;
+  --primary-tint: #e4bcca;
+  --primary-text: #21060f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+.section-hero {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 56, 0.6), rgba(0, 0, 56, 0.6)),
+    url(../img/main_back.jpg);
+  background-size: cover;
+  position: relative;
+}
+.header {
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo {
+  font-size: 3.2rem;
+  color: var(--primary-tint);
+  font-weight: 700;
+}
+
+.nav-lists {
+  list-style: none;
+  display: flex;
+
+  /* justify-content: center; */
+  align-items: center;
+  gap: 3.2rem;
+}
+.nav-list a {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-tint);
+}
+.nav-list a:hover {
+  color: var(--primary-color);
+}
+.nav-list.btn-cta a {
+  color: black;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: white;
+  border-radius: 2.4rem;
+  outline: none;
+}
+.nav-list.btn-cta a:hover {
+  color: white;
+  background-color: var(--primary-tint);
+}
+.check-now {
+  display: block;
+  padding: 1.6rem 3.2rem;
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+  color: black;
+  text-decoration: none;
+  font-size: 2.4rem;
+  /* display: inline-block; */
+  /* padding: 1.2rem 2.4rem; */
+  background-color: white;
+  border-radius: 3.2rem;
+  outline: none;
+}
