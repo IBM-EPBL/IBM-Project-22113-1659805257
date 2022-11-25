@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap");
+:root {
+  --primary: #1d6b50;
+  --secondary: #f8ff00;
+  --tritary: #4338ca;
+  --primary-tint: #eef2ff;
+  --secondary-tint: #a5b4fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.logo {
+  border-top: 5px solid #3ad59f;
+  border-left: 5px solid #f8ff00;
+  border-right: 5px solid #3ad59f;
+  border-bottom: 5px solid #f8ff00;
+  padding: 10px;
+}
+.logo p {
+  font-size: 3.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-lists {
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  list-style-type: none;
+}
+.nav-lists a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.nav-lists a:hover {
+  color: #3ad59f;
+}
+
+.nav-lists a.cta-btn {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #3ad59f;
+  text-decoration: none;
+  padding: 1.2rem 2.8rem;
+  border-radius: 2.8rem;
+  transition: all 0.3s ease;
+  text-align: centerS;
+}
+.nav-lists a.cta-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-tint);
+}
+
+.section-main {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+}
+.section-dashboard {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+}
+.section-main h1 {
+  font-size: 4.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 2.4rem;
+  border: 7px solid #333;
+  color: var(--primary-tint);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+  height: 9.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #114030;
+}
+
+footer p {
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  color: white;
+}
+
+/* Dashboard */
+.section-dashboard {
+  width: 100%;
+  /* background-color: #999; */
+  padding: 4.8rem;
+}
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  /* border: 5px solid red; */
+  flex: wrap;
+  width: 100%;
+}
+
+.row .figure-average-age {
+  max-width: 50%;
+  flex: 0 0 50%;
+  height: 40rem;
+  background-color: white;
+  border: 5px;
+}
+.row .figure-average-age iframe {
+  padding-right: 2.4rem;
+  width: 100%;
+  height: 40rem;
+  border: 0;
+  box-sizing: border-box;
+}
+.row .chess-pain-type,
+.row .figure-bp,
+.row .exercise-angina,
+.row .max-hr-diff,
+.row .bp-age {
+  max-width: 50%;
+  flex: 0 0 50%;
+  height: 40rem;
+}
+.row .chess-pain-type iframe,
+.row .figure-bp iframe,
+.row .exercise-angina iframe,
+.row .max-hr-diff iframe,
+.row .bp-age iframe {
+  /* position: absolute; */
+  padding-left: 2.4rem;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+
+.row .max-hr {
+  max-width: 100%;
+  flex: 0 0 100%;
+  height: 60rem;
+}
+.row .max-hr iframe {
+  width: 100%;
+  height: 100%;
+}
+/* .row .chess-pain-type {
+  max-width: 100%;
+  flex: 0 0 100%;
+  height: 60rem;
+}
+.row .chess-pain-type iframe {
+  width: 100%;
+  height: 100%;
+} */
+
+.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

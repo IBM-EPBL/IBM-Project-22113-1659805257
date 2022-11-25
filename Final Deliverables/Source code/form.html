@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prediction</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .sumit-center {
+        margin-top: 4.8rem;
+        justify-content: center;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(
+            rgba(0, 0, 56, 0.6),
+            rgba(0, 0, 56, 0.56)
+          ),
+          url(img/crohns-disease-how-does-it-affect-your-heart-1440x810.jpg);
+        background-size: cover;
+      }
+
+      .container {
+        padding: 40px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-top: 4.8px;
+        border-radius: 5px;
+        color: white;
+      }
+      form {
+        margin-top: 4.8px;
+      }
+      p {
+        margin-top: 32px;
+        font-size: 18px;
+      }
+      .btn-primary {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holder">
+      <div class="container">
+        <form method="" action="">
+          <h2 class="text-center">Heart Disease Prediction</h2>
+          <p>
+            The leading death in the developed world is Heart Disease. Therefore
+            there needs to be work done to help prevent the risk of having a
+            heart attack or stroke
+          </p>
+          <div class="form-group row">
+            <label for="age" class="col-sm-2 col-form-label"
+              >Age (in years)</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Age"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="sex" class="col-sm-2 col-form-label"
+              >Sex (0-female, 1-male)</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="number"
+                name="sex"
+                class="form-control"
+                id="sex"
+                type="number"
+              />
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">
+                Chess pain type
+              </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pain"
+                    id="typical-angina"
+                    value="1"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label" for="pain">
+                    Typical Angina
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pain"
+                    id="atypical-angina"
+                    value="2"
+                    required
+                  />
+                  <label class="form-check-label" for="pain">
+                    Atypical Angina
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pain"
+                    id="non-anginal-pain"
+                    value="3"
+                    required
+                  />
+                  <label class="form-check-label" for="pain">
+                    Non-anginal pain
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pain"
+                    id="asymptomatic"
+                    value="4"
+                    required
+                  />
+                  <label class="form-check-label" for="pain2">
+                    Non-anginal pain
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <label for="sex" class="col-sm-2 col-form-label">BP</label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                class="bp"
+                name="bp"
+                class="form-control"
+                id="bp"
+                type="number"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="cholestrol" class="col-sm-2 col-form-label"
+              >cholestrol</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="number"
+                name="cholestrol"
+                class="form-control"
+                id="cholestrol"
+                type="number"
+                required
+              />
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">
+                FBS(>120?True:False)
+              </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="fbs"
+                    id="fbs1"
+                    value="1"
+                    checked
+                  />
+                  <label class="form-check-label" for="pain"> True </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="fbs"
+                    id="fbs2"
+                    value="0"
+                  />
+                  <label class="form-check-label" for="pain"> False </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">EKG</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ekg"
+                    id="ekg1"
+                    value="0"
+                    checked
+                  />
+                  <label class="form-check-label" for="ekg"> Normal </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ekg"
+                    id="ekg2"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="ekg">
+                    Aving ST-T wave abnormality
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ekg"
+                    id="ekg3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="pain2">
+                    Showing probable or definite left vendricular
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <label for="maxHR" class="col-sm-2 col-form-label">Max-HR</label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                name="maxHR"
+                class="form-control"
+                id="maxHR"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="exerciseAngina" class="col-sm-2 col-form-label"
+              >Exercise Angina</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="number"
+                name="exerciseAngina"
+                class="form-control"
+                id="exerciseAngina"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="st" class="col-sm-2 col-form-label">ST Depresion</label>
+            <div class="col-sm-10">
+              <input type="number" name="st" class="form-control" id="st" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="slope" class="col-sm-2 col-form-label"
+              >Slope of ST</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="number"
+                name="slope"
+                class="form-control"
+                id="slope"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="slope" class="col-sm-2 col-form-label"
+              >Number of vesels fleuro</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="number"
+                name="slope"
+                class="form-control"
+                id="slope"
+                required
+              />
+            </div>
+          </div>
+
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Thallium</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="fbs"
+                    id="thallium1"
+                    value="3"
+                    checked
+                  />
+                  <label class="form-check-label" for="thallium">
+                    Normal
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="thallium"
+                    id="thallium2"
+                    value="6"
+                  />
+                  <label class="form-check-label" for="thallium">
+                    Fixed Defect
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="thallium"
+                    id="thallium3"
+                    value="6"
+                    required
+                  />
+                  <label class="form-check-label" for="thallium">
+                    Fixed Defect
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="row sumit-center">
+            <input
+              class="btn btn-primary"
+              type="submit"
+              value="Submit"
+              onclick="myFunction()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        const bp = document.getElementById("bp").value;
+        if (bp >= 130)
+          alert("The patient has increased risk of having Heart Disease");
+        else alert("The patient not have a risk of heart heart Disese");
+      }
+    </script>
+  </body>
+</html>
